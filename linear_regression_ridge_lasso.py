@@ -33,6 +33,9 @@ for l in [0.0001, 0.001, 0.01]:
     model_line2 = model2.predict(x_graph_poly)
     plt.plot(x_graph, model_line2, linestyle='--', label=f'λ-{l} ridge model')
 
+    print(f'model1 λ-{l}:', model1.coef_, model1.intercept_)
+    print(f'model2 λ-{l}:', model2.coef_, model2.intercept_)
+
 
 plt.scatter(x, y, label='Noise samples')
 plt.xlim(0, 1)

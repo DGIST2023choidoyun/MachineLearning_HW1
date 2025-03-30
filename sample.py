@@ -2,8 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
+N = 100
+
 x = np.linspace(0, 1)
-sample_x = np.linspace(0, 1, 10)
+sample_x = np.linspace(0, 1, N)
 norm = np.sin(2 * np.pi * x)
 
 y_noisy = np.sin(2 * np.pi * sample_x) + np.random.normal(0, 0.3, size=sample_x.shape)

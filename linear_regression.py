@@ -10,7 +10,7 @@ with open('lr_samples.json', 'r') as f:
 x = np.array(data['x']).reshape(-1, 1)
 y = np.array(data['y'])
 
-x_graph = np.linspace(0, 1).reshape(-1, 1)
+x_graph = np.linspace(0, 1, 300).reshape(-1, 1)
 
 for deg in [1, 2, 5, 9, 15]:
 
